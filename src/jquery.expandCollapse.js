@@ -34,7 +34,7 @@
           $trigger.addClass(hidden ? options.expandClass : options.collapseClass);
         }
 
-        $trigger.bind("click", function(e) {
+        $trigger.bind(options.eventType, function(e) {
           var hidden = $target.is(":hidden"),
             animation = hidden ? options.expandAnimation : options.collapseAnimation;
 
@@ -63,6 +63,7 @@
     updateText: true,
     updateClass: true,
     startHidden: false,
+    eventType: "click",
     triggerElement: ".trigger",
     expandClass: "expand",
     collapseClass: "collapse",
