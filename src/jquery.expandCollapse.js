@@ -76,7 +76,7 @@
     },
     collapseAnimation: {
       properties: { height : "hide" },
-      options: { duration: 0 },
+      options: { duration: 0 }
     }
   };
 })(jQuery);
